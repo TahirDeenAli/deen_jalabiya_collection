@@ -1467,3 +1467,99 @@ html {
     background: linear-gradient(135deg, #b9972c, #d4af37);
   }
 }
+
+/* ============================= */
+/* 📱 MOBILE RESPONSIVE STYLES   */
+/* ============================= */
+@media (max-width: 768px) {
+  
+  /* General body padding */
+  body {
+    padding: 0 10px;
+    overflow-x: hidden;
+  }
+
+  /* Header adjustments */
+  header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Navigation links stack nicely */
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+
+  /* Hero or banner image full width */
+  .hero img,
+  .header-slider img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  /* Product grid — make it 2 per row on smaller screens */
+  .products {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+  }
+
+  .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  /* Fix footer text */
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+  }
+
+  /* ✅ Fix: Social media icons visible and neat */
+  .social-links {
+    position: fixed;
+    bottom: 20px;
+    right: 50%;
+    transform: translateX(50%) scale(0.85);
+    flex-direction: row;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 8px 14px;
+    border-radius: 50px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 200;
+  }
+
+  .social-links a {
+    color: #d4af37;
+    font-size: 1.4rem;
+    transition: 0.3s;
+  }
+
+  .social-links a:hover {
+    transform: scale(1.2);
+  }
+
+  /* WhatsApp button slightly raised to avoid overlap */
+  .whatsapp-float {
+    bottom: 80px;
+    right: 15px;
+    transform: scale(0.9);
+  }
+
+  /* Map section scaling */
+  iframe {
+    width: 100%;
+    height: 220px;
+    border-radius: 12px;
+  }
+}
