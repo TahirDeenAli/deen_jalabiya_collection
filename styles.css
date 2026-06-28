@@ -1273,6 +1273,7 @@ header {
 #backToTop {
   display: none;
   position: fixed;
+  width: 50px;
   bottom: 25px;
   left: 90px;
   z-index: 98;
@@ -1608,9 +1609,13 @@ html {
     transform: scale(0.9);
   }
   #backToTop {
-    right: 15px;
-    bottom: 130px; /* place above WhatsApp on mobile */
-    transform: scale(0.9);
+    width: 50px;
+    height: 50px;
+    
+    left: 20px;
+    right: auto;
+
+    bottom: 90px
   }
 }
 
